@@ -175,41 +175,42 @@ FLATTY CV - https://www.freshdesignweb.com/creative-resume-templates/
 </div>
 
 <!-- team section -->
-<section id="team">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12 col-sm-12">
-				<h1 class="heading bold">PORTFOLIO </h1>
-			</div>
-			<div class="col-md-4 col-sm-4 col-xs-6 wow fadeIn" data-wow-delay="0.9s">
-				<div class="team-wrapper">
-					<img src="images/team1.jpg" class="img-responsive" alt="team img">
-						<div class="team-des">
-							<h4>Tracy</h4>
-							<h3>Designer</h3>
-						</div>
-				</div>
-			</div>
-			<div class="col-md-4 col-sm-4 col-xs-6 wow fadeIn" data-wow-delay="1.3s">
-				<div class="team-wrapper">
-					<img src="images/team2.jpg" class="img-responsive" alt="team img">
-						<div class="team-des">
-							<h4>Linda</h4>
-							<h3>Manager</h3>
-						</div>
-				</div>
-			</div>
-			<div class="col-md-4 col-sm-4 col-xs-6 wow fadeIn" data-wow-delay="1.6s">
-				<div class="team-wrapper">
-					<img src="images/team3.jpg" class="img-responsive" alt="team img">
-						<div class="team-des">
-							<h4>Mary</h4>
-							<h3>Developer</h3>
-						</div>
-				</div>
-			</div>
-		</div>
-	</div>
+<section id="team" style="background-color:#00000;">
+  <h1>Bootstrap Filtered Portfolio</h1>
+
+  <hr>
+  <ul id="ul_top_hypers" class="filter nav nav-pills">
+    <li data-value="all"><a href="#">All</a></li>
+    <li data-value="dog"><a href="#">Dog</a></li>
+    <li data-value="cat"><a href="#">Cat</a></li>
+    <li data-value="bird"><a href="#">Birds</a></li>
+  </ul>
+
+  <hr>
+
+  <ul class="thumbnails">
+	<div class="row">
+	<br><br><br>
+    <li data-type="dog" data-id="id-1" class="span3">
+      <a href="#team" class="img-thumbnail" id="dog1"><img src="images/dog1.jpg" style="min-height:200px;height:200px;" alt=""></a>
+    </li>
+    <li data-type="cat" data-id="id-2" class="span3">
+      <a href="#team" class="img-thumbnail" id="cat1"><img src="images/cat1.jpg" style="min-height:200px;height:200px;" alt=""></a>
+    </li>
+    <li data-type="bird" data-id="id-3" class="span3">
+      <a href="#team" class="img-thumbnail" id="bird1"><img src="images/bird1.jpg" style="min-height:200px;height:200px;"alt=""></a>
+    </li>
+    <li data-type="dog" data-id="id-1" class="span3">
+      <a href="#team" class="img-thumbnail" id="dog1"><img src="images/dog1.jpg" style="min-height:200px;height:200px;" alt=""></a>
+    </li>
+    <li data-type="cat" data-id="id-2" class="span3">
+      <a href="#team" class="img-thumbnail" id="cat1"><img src="images/cat1.jpg" style="min-height:200px;height:200px;" alt=""></a>
+    </li>
+    <li data-type="bird" data-id="id-3" class="span3">
+      <a href="#team" class="img-thumbnail" id="bird1"><img src="images/bird1.jpg" style="min-height:200px;height:200px;"alt=""></a>
+    </li>
+  </ul>
+
 </section>
 
 <!-- contact section -->
@@ -288,6 +289,39 @@ FLATTY CV - https://www.freshdesignweb.com/creative-resume-templates/
 <script src="js/wow.min.js"></script>
 <script src="js/custom.js"></script>
 <script src="js/carousel.js"></script>
-
+<script type='text/javascript' src="js/bootbox.min.js"></script>
+<script type="text/javascript" src="js/jquery.quicksand.js"></script>
+<script>
+    function gallery(){
+            $('#dog1').click(function() { bootbox.alert('<img src="images/dog1.jpg"><h4>Dog ipsum dolor sit amet</h4>'); });
+            $('#cat1').click(function() { bootbox.alert('<img src="images/cat1.jpg"><h4>Cat ipsum dolor sit amet</h4>'); });
+            $('#bird1').click(function() { bootbox.alert('<img src="images/bird1.jpg"><h4>Bird ipsum dolor sit amet</h4>'); });
+        }
+    var $itemsHolder = $('ul.thumbnails');
+    var $itemsClone = $itemsHolder.clone(); 
+    var $filterClass = "";
+    $('ul.filter li').click(function(e) {
+    e.preventDefault();
+    $filterClass = $(this).attr('data-value');
+        if($filterClass == 'all'){ var $filters = $itemsClone.find('li'); }
+        else { var $filters = $itemsClone.find('li[data-type='+ $filterClass +']'); }
+        $itemsHolder.quicksand(
+          $filters,
+          { duration: 1000 },
+          gallery
+          );
+    });
+    $(document).ready(gallery);
+</script>
+<!-- Small hack to get gallery to display properly -->
+<script>
+	window.onload = function() {
+    var selectBox =         document.getElementById('ul_top_hypers');
+    var items =             selectBox.getElementsByTagName('LI')
+	items[1].click();
+	console.log("clicked one");
+	items[0].click();
+	}
+</script>
 </body>
 </html>
