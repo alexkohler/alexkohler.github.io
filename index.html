@@ -23,11 +23,13 @@ FLATTY CV - https://www.freshdesignweb.com/creative-resume-templates/
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" type="text/css" media="all" href="css/bootstrap-glyphicons.css">
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<!-- onepage scroll css -->
+	<link rel='stylesheet' href='css/onepage-scroll.css' type='text/css'> 
 </head>
 <body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
 
 <!-- navigation section -->
-<section class="navbar navbar-fixed-top custom-navbar" role="navigation">
+<div class="navbar navbar-fixed-top custom-navbar" role="navigation">
 	<div class="container">
 		<div class="navbar-header">
 			<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -48,9 +50,10 @@ FLATTY CV - https://www.freshdesignweb.com/creative-resume-templates/
 			</ul>
 		</div>
 	</div>
-</section>
+</div>
 
 <!-- home section -->
+<div class="main">
 <section id="home">
 	<div class="container">
 		<div class="row">
@@ -79,9 +82,6 @@ FLATTY CV - https://www.freshdesignweb.com/creative-resume-templates/
 				<br>
 				<br>
 				<h1 class="heading">Primary Skills</h2>
-			</div>
-			            <div class="col-md-12 col-sm-12 text-center">
-            </div>
             <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.6s">
 				<span><i class="fa fa-mobile"></i>Android Development</span>
             </div>
@@ -106,6 +106,7 @@ FLATTY CV - https://www.freshdesignweb.com/creative-resume-templates/
             <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.9s">
 				<span><i class="fa fa-database wow"></i>SQLite/Oracle Databases</span>
             </div>
+
             </div>
 		</div>
 	</div>
@@ -237,35 +238,46 @@ FLATTY CV - https://www.freshdesignweb.com/creative-resume-templates/
 		<div class="row">
 			<div class="col-md-12 col-sm-12 text-center">
 				<h1 class="heading bold">CONTACT ME</h1>
+				<br>
+				<br>
+				<br>
 			</div>
 		</div>
 		<div class="row">
-			<div class="contact-info-box col-md-4 col-sm-4 col-xs-6 wow fadeInUp" data-wow-delay="0.8s">
-				<i class="fa fa-envelope-o"></i>
-					<h3>aok5326@psu.edu</h3>
-			</div>
-		</div>
+		            <div class="contact-info-box col-md-4 col-sm-4 col-xs-6 wow fadeInUp" data-wow-delay="0.6s">
+                <i class="fa fa-phone"></i>
+                    <h3>570-916-7682</h3>
+            </div>
+            <div class="contact-info-box col-md-4 col-sm-4 col-xs-6 wow fadeInUp" data-wow-delay="0.8s">
+                <i class="fa fa-envelope-o"></i>
+                    <h3>aok5326@psu.edu</h3>
+            </div>
+            <div class="contact-info-box col-md-4 col-sm-4 col-xs-6 wow fadeInUp" data-wow-delay="1s">
+                <i class="fa fa-map-marker"></i>
+                    <h3>State College, Pennsylvania</h3>
+            </div>
+
 		<div class="row">
+			<br>
+			<br>
+			<br>
+			<br>
 			<div class="col-md-12 col-sm-12">
-				<form action="#" method="post">
-					<div class="col-md-6 col-sm-6">
-						<input name="name" type="text" class="form-control" id="name" placeholder="Name">
-				  	  	<input name="email" type="email" class="form-control" id="email" placeholder="Email">
-						<input name="subject" type="text" class="form-control" id="subject" placeholder="Subject">
-					</div>
-					<div class="col-md-6 col-sm-6">
-						<textarea name="message" rows="7" class="form-control" id="message" placeholder="Message"></textarea>
-					</div>
-					<div class="col-md-offset-4 col-md-4 col-sm-offset-4 col-sm-6">
-						<input name="submit" type="submit" class="form-control" id="submit" value="SEND EMAIL">
-					</div>
-				</form>
+				<ul class="social-icon">
+					<li><a href="https://www.facebook.com/alex.kohler.5" 
+                    				class="fa fa-facebook wow bounceIn" data-wow-delay="0.3s" target="_parent"></a></li>
+					<li><a href="https://www.linkedin.com/in/alexkohler" class="fa fa-linkedin-square wow bounceIn" data-wow-delay="0.6s"></a></li>
+					<li><a href="https://github.com/aok5326" class="fa fa-github wow bounceIn" data-wow-delay="0.9s"></a></li>
+				</ul>
 			</div>
+		</div>
 		</div>
 	</div>
 </section>
+</div> <!-- end main div for one page scrolling -->
 
 <!-- footer section -->
+<!--
 <footer>
 	<div class="container">
 		<div class="row">
@@ -282,6 +294,7 @@ FLATTY CV - https://www.freshdesignweb.com/creative-resume-templates/
 		</div>
 	</div>
 </footer>
+-->
 
 <!-- copyright section -->
 <section id="copyright">
@@ -309,6 +322,8 @@ FLATTY CV - https://www.freshdesignweb.com/creative-resume-templates/
 <script src="js/carousel.js"></script>
 <script type='text/javascript' src="js/bootbox.min.js"></script>
 <script type="text/javascript" src="js/jquery.quicksand.js"></script>
+<!--One page scroll -->
+<script type="text/javascript" src="js/jquery.onepage-scroll.js"></script>
 <script>
     function gallery(){
             $('#dog1').click(function() { bootbox.alert('<img src="images/dog1.jpg"><h4>Dog ipsum dolor sit amet</h4>'); });
@@ -341,5 +356,16 @@ FLATTY CV - https://www.freshdesignweb.com/creative-resume-templates/
 	items[0].click();
 	}
 </script> 
+<!-- One page scrolling -->
+	 <script>
+	  $(document).ready(function(){
+      $(".main").onepage_scroll({
+        sectionContainer: "section",
+        responsiveFallback: 600,
+        loop: true
+      });
+		});
+		
+	</script>  
 </body>
 </html>

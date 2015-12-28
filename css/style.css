@@ -286,14 +286,26 @@ p {
 
 /* contact section */
 #contact {
-  background: #f9f9f9;
+  background: url('../images/tux-30.jpg') no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
   text-align: center;
 }
 #contact .fa {
   font-size: 40px;
 }
 #contact form {
-  padding-top: 80px;
+  padding-top: 40;
 }
 #contact .form-control {
   border-radius: 0;
@@ -323,6 +335,7 @@ p {
 .contact-info-box h3 { font-size: 16px; }
 
 /* footer section */
+/*
 footer {
   background: url('../images/footer-bg.jpg') no-repeat;
   -webkit-background-size: cover;
@@ -331,7 +344,7 @@ footer {
   text-align: center;
   padding-top: 80px;
   padding-bottom: 80px;
-}
+}*/
 .social-icon {
   padding: 0;
   text-align: center;
@@ -363,8 +376,8 @@ footer {
 #copyright {
   background: #404040;
   color: #ffffff;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 10;
+  padding-bottom: 10;
 }
 #copyright p {
   padding-top: 20px;
