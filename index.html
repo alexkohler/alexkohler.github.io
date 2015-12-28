@@ -21,11 +21,10 @@ FLATTY CV - https://www.freshdesignweb.com/creative-resume-templates/
 	<link rel="stylesheet" href="css/nivo-lightbox.css">
 	<link rel="stylesheet" href="css/nivo_themes/default/default.css">
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" type="text/css" media="all" href="css/bootstrap-glyphicons.css">
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 	<!-- onepage scroll css -->
-	<link rel='stylesheet' href='css/onepage-scroll.css' type='text/css'> 
-</head>
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+	</head>
 <body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
 
 <!-- navigation section -->
@@ -53,22 +52,23 @@ FLATTY CV - https://www.freshdesignweb.com/creative-resume-templates/
 </div>
 
 <!-- home section -->
-<div class="main">
-<section id="home">
+<div id="fullpage">
+<div class="section" id="home">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 col-sm-12">
-				<hr>
+				<br><br><br><br><br><br><br><br><br><br>
 				<h3><span class="bold">I am a SOFTWARE ENGINEER</h3>
 				<h1 class="heading">from Pennsylvania</h1>
+				<hr>
 				<a href="#about" class="smoothScroll btn btn-default">Learn more</a>
 			</div>
 		</div>
 	</div>		
-</section>
+</div>
 
 <!-- about section -->
-<section id="about" style="background-color:#f0f0f0;">
+<div class="section" id="about" style="background-color:#f0f0f0;">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 col-sm-12 text-center">
@@ -81,7 +81,7 @@ FLATTY CV - https://www.freshdesignweb.com/creative-resume-templates/
 				<br>
 				<br>
 				<br>
-				<h1 class="heading">Primary Skills</h2>
+				<h1 class="heading">Primary Skills</h1>
             <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.6s">
 				<span><i class="fa fa-mobile"></i>Android Development</span>
             </div>
@@ -119,10 +119,10 @@ FLATTY CV - https://www.freshdesignweb.com/creative-resume-templates/
 	<br>
 	<br>
 	<br>
-</section>
+</div>
 
 <!-- portfolio section -->
-<section id="experience" style="background-color:#ffffff;">
+<div class="section" id="experience" style="background-color:#ffffff;">
 <div id="experience">
 	<div class="container">
 		<div class="row">
@@ -133,40 +133,39 @@ FLATTY CV - https://www.freshdesignweb.com/creative-resume-templates/
 				<br>
 				<br>
 				<h1 class="heading bold">PROFESSIONAL EXPERIENCE</h1>
-				<br>
-				<br>
-				<br>
   <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <div class="carousel-content">
-        <h2>Lutron Electronics</h2>
-		<br>
-		<b>Software Engineering Intern</b><br>
-		<b>Duration</b><br>
-		Pt1<br>
-		pt2<br>
-		pt3<br>
-		pt4
-      </div>
-    </div>
-    <div class="item">
-      <div class="carousel-content">
-        <h3>Oracle Primavera</h3>
-		Pt1<br>
-		pt2<br>
-		pt3<br>
-		pt4
-      </div>
-    </div>
+    	<div class="item active">
+    	  <div class="carousel-content">
+    	    <h2>Lutron Electronics</h2>
+			<br>
+			<b>Software Engineering Intern</b><br>
+			<b>Duration</b><br>
+			Pt1<br>
+			pt2<br>
+			pt3<br>
+			pt4
+    	  </div>
+		</div>
+    	<div class="item">
+    	  <div class="carousel-content">
+    	    <h3>Oracle Primavera</h3>
+			Pt1<br>
+			pt2<br>
+			pt3<br>
+			pt4
+    	  </div>
+    	</div>
 
-    <div class="item">
-      <div class="carousel-content">
-        <h3>Penn State University</h3>
-        <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
-      </div>
-    </div>
+    	<div class="item">
+    	  <div class="carousel-content">
+    	    <h3>Penn State University</h3>
+    	    <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+    	  </div>
+    	</div>
+
+   </div> <!-- end carousel inner -->
 
 
   <!-- Left and right controls -->
@@ -178,7 +177,7 @@ FLATTY CV - https://www.freshdesignweb.com/creative-resume-templates/
     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
-</div>
+  </div><!-- end mycarousel? -->
 			</div>		
 		</div>
 	</div>
@@ -186,11 +185,10 @@ FLATTY CV - https://www.freshdesignweb.com/creative-resume-templates/
 <br><br><br><br><br><br><br><br><br><br>
 <br><br><br><br><br><br><br><br><br><br>
 <br><br><br><br><br><br><br>
-</section>
-
+</div>
 
 <!-- team section -->
-<section id="team" style="background-color:#f0f0f0;">
+<div class="section" id="team" style="background-color:#f0f0f0;">
 	<h1 class="heading bold">PORTFOLIO</h1>
 
   <hr>
@@ -205,35 +203,36 @@ FLATTY CV - https://www.freshdesignweb.com/creative-resume-templates/
 
   <ul class="thumbnails">
 	<div class="row">
-	<br><br><br>
-    <li data-type="dog" data-id="id-1" class="span3">
-      <a href="#team" class="img-thumbnail" id="dog1"><img src="images/dog1.jpg" style="min-height:200px;height:200px;" alt=""></a>
-    </li>
-    <li data-type="cat" data-id="id-2" class="span3">
-      <a href="#team" class="img-thumbnail" id="cat1"><img src="images/cat1.jpg" style="min-height:200px;height:200px;" alt=""></a>
-    </li>
-    <li data-type="bird" data-id="id-3" class="span3">
-      <a href="#team" class="img-thumbnail" id="bird1"><img src="images/bird1.jpg" style="min-height:200px;height:200px;"alt=""></a>
-    </li>
-    <li data-type="dog" data-id="id-4" class="span3">
-      <a href="#team" class="img-thumbnail" id="dog2"><img src="images/dog1.jpg" style="min-height:200px;height:200px;" alt=""></a>
-    </li>
-    <li data-type="cat" data-id="id-5" class="span3">
-      <a href="#team" class="img-thumbnail" id="cat2"><img src="images/cat1.jpg" style="min-height:200px;height:200px;" alt=""></a>
-    </li>
-    <li data-type="bird" data-id="id-6" class="span3">
-      <a href="#team" class="img-thumbnail" id="bird2"><img src="images/bird1.jpg" style="min-height:200px;height:200px;"alt=""></a>
-    </li>
+		<br><br><br>
+  	  <li data-type="dog" data-id="id-1" class="span3">
+  	    <a href="#team" class="img-thumbnail" id="dog1"><img src="images/dog1.jpg" style="min-height:200px;height:200px;" alt=""></a>
+  	  </li>
+  	  <li data-type="cat" data-id="id-2" class="span3">
+  	    <a href="#team" class="img-thumbnail" id="cat1"><img src="images/cat1.jpg" style="min-height:200px;height:200px;" alt=""></a>
+  	  </li>
+  	  <li data-type="bird" data-id="id-3" class="span3">
+  	    <a href="#team" class="img-thumbnail" id="bird1"><img src="images/bird1.jpg" style="min-height:200px;height:200px;"alt=""></a>
+  	  </li>
+  	  <li data-type="dog" data-id="id-4" class="span3">
+  	    <a href="#team" class="img-thumbnail" id="dog2"><img src="images/dog1.jpg" style="min-height:200px;height:200px;" alt=""></a>
+  	  </li>
+  	  <li data-type="cat" data-id="id-5" class="span3">
+  	    <a href="#team" class="img-thumbnail" id="cat2"><img src="images/cat1.jpg" style="min-height:200px;height:200px;" alt=""></a>
+  	  </li>
+  	  <li data-type="bird" data-id="id-6" class="span3">
+  	    <a href="#team" class="img-thumbnail" id="bird2"><img src="images/bird1.jpg" style="min-height:200px;height:200px;"alt=""></a>
+  	  </li>
+	</div> <!-- end row div -->
   </ul>
-  <br>
-  <br>
-  <br>
-  <br>
+  	<br>
+  	<br>
+  	<br>
+  	<br>
 
-</section>
+</div> <!-- end team div-->
 
 <!-- contact section -->
-<section id="contact" style="background-color:#ffffff;">
+<div class="section" id="contact" style="background-color:#ffffff;">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 col-sm-12 text-center">
@@ -273,8 +272,8 @@ FLATTY CV - https://www.freshdesignweb.com/creative-resume-templates/
 		</div>
 		</div>
 	</div>
-</section>
-</div> <!-- end main div for one page scrolling -->
+</div>
+</div> <!--end fullpage divider -->
 
 <!-- footer section -->
 <!--
@@ -297,7 +296,7 @@ FLATTY CV - https://www.freshdesignweb.com/creative-resume-templates/
 -->
 
 <!-- copyright section -->
-<section id="copyright">
+<div class="section" id="copyright">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-8 col-sm-8 col-xs-9">
@@ -308,22 +307,32 @@ FLATTY CV - https://www.freshdesignweb.com/creative-resume-templates/
 			</div>
 		</div>
 	</div>
-</section>
+</div>
 
 <!-- JAVASCRIPT JS FILES -->	
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/smoothscroll.js"></script>
-<script src="js/isotope.js"></script>
-<script src="js/imagesloaded.min.js"></script>
-<script src="js/nivo-lightbox.min.js"></script>
-<script src="js/wow.min.js"></script>
-<script src="js/custom.js"></script>
-<script src="js/carousel.js"></script>
-<script type='text/javascript' src="js/bootbox.min.js"></script>
-<script type="text/javascript" src="js/jquery.quicksand.js"></script>
+<!-- <script src="js/jquery.js"></script> -->
 <!--One page scroll -->
-<script type="text/javascript" src="js/jquery.onepage-scroll.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/smoothscroll.js"></script>
+	<script src="js/isotope.js"></script>
+	<script src="js/imagesloaded.min.js"></script>
+	<script src="js/nivo-lightbox.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/custom.js"></script>
+	<script src="js/carousel.js"></script>
+	<script type='text/javascript' src="js/bootbox.min.js"></script>
+	<script type="text/javascript" src="js/jquery.quicksand.js"></script>
+	<!-- One page scrolling -->
+		 <script>
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+        		scrollBar: true
+    		});
+		});
+		</script>  
 <script>
     function gallery(){
             $('#dog1').click(function() { bootbox.alert('<img src="images/dog1.jpg"><h4>Dog ipsum dolor sit amet</h4>'); });
@@ -356,16 +365,5 @@ FLATTY CV - https://www.freshdesignweb.com/creative-resume-templates/
 	items[0].click();
 	}
 </script> 
-<!-- One page scrolling -->
-	 <script>
-	  $(document).ready(function(){
-      $(".main").onepage_scroll({
-        sectionContainer: "section",
-        responsiveFallback: 600,
-        loop: true
-      });
-		});
-		
-	</script>  
 </body>
 </html>
