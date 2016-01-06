@@ -484,12 +484,16 @@ footer {
   color:#000000;
   position:center 
   margin:0 auto;
+  left: 0;
+  margin-left: 0;
 
 }
 .carousel-control .fa-chevron-right {
   color:#000000;
   position:center; 
   margin:0 auto;
+  right: 0;
+  margin-right: 0;
 
 }
 .carousel-caption{
