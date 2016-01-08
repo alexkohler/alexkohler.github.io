@@ -331,44 +331,5 @@ FLATTY CV - https://www.freshdesignweb.com/creative-resume-templates/
 			}
 		});
 		</script>  
-<script>
-    function gallery(){
-            $('#dog1').click(function() { bootbox.alert('<img src="images/dog1.jpg"><h4>Dog ipsum dolor sit amet</h4>'); });
-            $('#cat1').click(function() { bootbox.alert('<img src="images/cat1.jpg"><h4>Cat ipsum dolor sit amet</h4>'); });
-            $('#bird1').click(function() { bootbox.alert('<img src="images/bird1.jpg"><h4>Bird ipsum dolor sit amet</h4>'); });
-        }
-    var $itemsHolder = $('ul.thumbnails');
-    var $itemsClone = $itemsHolder.clone(); 
-    var $filterClass = "";
-    $('ul.filter li').click(function(e) {
-    e.preventDefault();
-    $filterClass = $(this).attr('data-value');
-        if($filterClass == 'all'){ var $filters = $itemsClone.find('li'); }
-        else { var $filters = $itemsClone.find('li[data-type='+ $filterClass +']'); }
-        $itemsHolder.quicksand(
-          $filters,
-          { duration: 1000 },
-          gallery
-          );
-    });
-    $(document).ready(gallery);
-</script>
-<!-- Small hack to get gallery to display properly -->
-<script>
-	window.onload = function() {
-    var selectBox =         document.getElementById('ul_top_hypers');
-    var items =             selectBox.getElementsByTagName('LI')
-	items[1].click();
-	console.log("clicked one");
-	items[0].click();
-	}
-</script> 
-<!-- Check for mobile website -->
-<!--<script type="text/javascript">
-
-if (screen.width <= 699) {
-document.location = "mobile.html";
-}-->
-</script>
 </body>
 </html>
