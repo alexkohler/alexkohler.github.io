@@ -323,10 +323,12 @@ FLATTY CV - https://www.freshdesignweb.com/creative-resume-templates/
 	<!-- One page scrolling -->
 		 <script>
 		$(document).ready(function() {
-			$('#fullpage').fullpage({
-        		scrollBar: true,
-				scrollingSpeed: 700
-    		});
+			if (screen.width <= 699) {
+				$('#fullpage').fullpage({
+        			scrollBar: true,
+					scrollingSpeed: 700
+    			});
+			}
 		});
 		</script>  
 <script>
